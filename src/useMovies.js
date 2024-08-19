@@ -47,7 +47,7 @@ export function useMovies(query, callback) {
 
       fetchMovies();
     },
-    [query]
+    [query, callback]
   );
   return { movies, isLoading, error };
 }
